@@ -43,7 +43,6 @@ plt.errorbar(I_EA, B_moy, xerr=errI_EA, yerr=errB_moy, ls='None', marker='v', co
 plt.plot(x, lin(x, *popt), label=f"$B = ${fmt(popt[0])}$I + ${fmt(popt[1])}\n($R^2 = {r_squared:.3f}$)", color='#FFD700')
 plt.xlabel("Intensité de l'électro-aimant $[A]$", fontsize=15)
 plt.ylabel('Champ magnétique moyen $[T]$', fontsize=15)
-plt.tick_params(labelsize=13)
+plt.tick_params(labelsize=10)
 plt.legend()
-plt.show()
 plt.savefig('figures/B_vs_I(pico).png', dpi=200)
