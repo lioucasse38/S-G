@@ -50,5 +50,5 @@ plt.legend()
 plt.xlabel("Intensité de l'électro-aimant $[A]$")
 plt.ylabel("Déflexion induite par l'électro-aimant $[mm]$")
 plt.savefig('figures/s_vs_I(oscillo).png', dpi=200)
-plt.show()
+
 
