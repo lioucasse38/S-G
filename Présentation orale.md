@@ -95,4 +95,20 @@
   - Avec un $D = 49.1cm$ et $d = 9.5cm$, on peut calculer la valeur du gradient du champ en fonction de $s$ et de $T$  d'après la formule vue précédemment: $\frac{\partial B}{\partial z} (T.cm^{-1})= 8,01\times 10^{-4}\times s(mm) \times T(K)$ .
   - On peut ainsi en déduire le champ magnétique moyen.
 
-- 
+- Résultats et analyse
+
+  - On obtient un profil comme attendu, le faisceau est séparé en deux, de part et d'autre du centre.
+  - On peut d'abord tracer les écarts $s_+$ et $s_-$ obtenus en fonction du courant appliqué à la bobine. (voir graphe), ce qui nous permet de faire un fit linéaire pour ensuite avoir la valeur du gradient du champ magnétique pour différents courants (à l'aide de la formule précédente), et ainsi en déduire la valeur du champ magnétique moyen pour différents courants. (voir graphe)
+  - On remarque donc que la déflexion augmente avec le courant, ce qui était prévisible car le champ magnétique créé par l'électro-aimant augmente linéairement avec le courant.
+  - Après avoir trouvé les valeurs de champ magnétique moyen en fonction du courant, on remarque que l'ordre de grandeur du champ magnétique est  environ $0.4 \space T$, ce qui est raisonnable est cohérent selon notre configuration (les valeurs typiques de champ magnétique pour ce type).
+  - Quoi dire d'autre ??
+
+# 6. Evaluation du nombre d'atomes dans le jet non-défléchi
+
+- Théorie
+  - On a mesurer des profils d'intensité pour le jet non-défléchi, en connaissant l'aire sous la courbe grâce à la formule suivante : $\text{Aire} [nA.s]= 1.065(I_{pic} - I_{fond})\times\text{FWHM}$, on peut déduire directement le nombre d'atomes captés si on considère l'efficacité du détecteur de 100%.
+  - On a la charge d'un ion qui est égale à $1.6\times10^{-19} \space C$. Comme le coulomb est également des $A.s$, on peut obtenir le nombre d'atomes par : $\#\text{atomes} = \frac{\text{Aire}}{1.6\times10^{-19}C}$. 
+- Matériel et méthode
+  - On prend comme exemple le profil obtenu pour les paramètres optimaux.
+- Résultats
+  - En utilisant la formule, on trouve que $5.14\times10^{9}$ atomes ont été perçus par le détecteur, avec l'efficacité d'ionisation supposée de 100%, il y a le même nombre d'atomes de potassium qui ont été envoyés par le jet non-défléchi.
