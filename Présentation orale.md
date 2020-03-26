@@ -27,7 +27,7 @@
   - Pompe à vide (pour éviter les collisions avec d'autres atomes)
   - Electro-aimant (appliquer un champ magnétique non-uniforme)
   - Détecteur (filament de tungstène chauffé, pour qu'au contact du filament les atomes de potassium s'ionisent, et entouré d'une cage de Faraday pour attirer les atomes ionisés)
-  - Moteur + capteurs (permet de déplacer le détecteur et toujours parcourir la même distance depuis la même psosition)
+  - Moteur + capteurs (permet de déplacer le détecteur et toujours parcourir la même distance depuis la même position)
   - Sources de courant : $I_{\text{détecteur}}$ et $I_{\text{électro-aimant}}$ 
   - Source de tension : $V_{\text{cage de Faraday}}$
   - Réglage de la température du four
@@ -63,12 +63,14 @@
   - But : Déterminer les conditions optimales d’observation du phénomène de quantification spatiale
   - Comme attendu classiquement, sans champ magnétique non-uniforme appliqué, le faisceau ne doit pas être dévié. Distribution gaussienne avec comme maximum la position en face de la fente du four.
   - Détermination du rapport $\text{Signal}/\text{Bruit}$ : $(V_{pic} - V_{fond}) / V_{fond}$. 
+  
 - Matériel et Méthodes
   - On amène le courant du filament à 2.8A (toujours attendre la stabilisation), et la tension de la cage de Faraday à 5.0V
   - On positionne le détecteur à une des extrémités.
   - On start l'oscilloscope, puis on sélectionne la position '+' et on démarre le moteur en même temps. On a alors un repère pour le moment où le détecteur à commencer à mesurer. On refait la même chose à la fin (à l'envers bien sûr) et on a un repère pour la fin de la mesure. 
   - On peut alors calculer le temps passé pour effectuer la mesure (entre les deux repères), et sachant la distance parcourue en regardant la position de la vis micrométrique à chaque extrémité, on a une conversion $sec \rightarrow mm$. 
   - On réitère l'opération pour des valeurs différentes de $I_{détecteur}$ (avec valeurs fixes de $V_{cage}$), et on évalue le rapport $\text{Signal}/\text{Bruit}$ pour chaque prise de mesures, pour ensuite continuer avec la valeur de $I_{détecteur}$ qui donne un rapport $\text{Signal}/\text{Bruit}$ le plus élevé en faisant varier cette fois-ci $V_{cage}$. 
+  
 - Résultats et Analyse
   - (voir tableaux)
   - On a un meilleur rapport $\text{Signal}/\text{Bruit}$ pour un $I_{détecteur} = 2.9A$ et $V_{cage} = 5.0V$. 
@@ -76,3 +78,21 @@
     - Au fur et a mesure que le détecteur se déplace, un dépôt de potassium se forme sur ce dernier, ce qui a pour effet d'ioniser des atomes qui ne sont pas forcément envoyés par le faisceau mais qui sont ionisés directement depuis le dépôt.
     - Le détecteur se rapproche du maximum d'intensité du faisceau au début et s'en éloigne à la fin. 
     - L'intensité du faisceau augmente peut-être avec le temps. 
+  
+  # 5. Distribution spatiale du jet défléchi
+  
+- Théorie
+
+  - Comme vu dans l'introduction, les atomes subissent une force à cause du champ magnétique non-uniforme et de leur moment magnétique de spin. On est alors censé observer une déflexion du faisceau en deux si les atomes se trouvent dans leur état fondamental. Avec une analyse statistique du gaz de potassium et du faisceau qui en résulte et une étude des forces appliquées aux atomes de potassium, on peut déterminer la déflexion des atomes avec la vitesse la plus probable (qui se trouve être $v_m = \sqrt{\frac{3k_BT}{m_{potass}}}$ après l'analyse de la distribution des vitesses et du flux de particules généré à la sortie du four).
+  -  On se retrouve alors avec la déflexion en fonction du gradient du champ magnétique appliqué : $s_m = \pm \frac{d}{3T}(D + d/2)\frac{\mu_B}{k_B}\frac{\partial B}{\partial z}$. Où D est la distance entre la fin de l'électro-aimant et la position du "mur" où les atomes sont observés, et d la longueur que les atomes parcourent dans l'électro-aimant.
+  - Il est également possible d'obtenir la valeur du champ magnétique moyen de l'électro-aimant : $B_{moyen} \approx a\times \frac{\partial B}{\partial z}$ où $a$ est un paramètre de notre électro-aimant valant $5.5mm$, si le champ magnétique était produit par deux fils parallèles de longueur infinie, $a$ serait la moitié de la distance les séparant.
+
+- Matériel et méthode
+
+  - Même technique pour que pour le jet non-défléchi pour avoir un repère lors de l'acquisition des données. On utilise les paramètres optimaux trouvés précédemment pour le courant de détecteur et la tension de la cage de Faraday. On mesure le profil du jet défléchi pour des valeurs de courant de bobine fixes.
+  - On fait varier le courant appliqué dans la bobine de l'électro-aimant pour faire varier le gradient du champ magnétique et prendre d'autres mesures du profil. 
+  - On mesure la position des pics $s_+$ et $s_-$ par rapport au creux, avec la conversion $sec \rightarrow mm$, on peut trouver la déflexion en $mm$.
+  - Avec un $D = 49.1cm$ et $d = 9.5cm$, on peut calculer la valeur du gradient du champ en fonction de $s$ et de $T$  d'après la formule vue précédemment: $\frac{\partial B}{\partial z} (T.cm^{-1})= 8,01\times 10^{-4}\times s(mm) \times T(K)$ .
+  - On peut ainsi en déduire le champ magnétique moyen.
+
+- 
