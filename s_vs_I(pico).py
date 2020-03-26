@@ -49,5 +49,5 @@ plt.plot(x, lin(x, *popt), linestyle='-', color='black', label="Fit linéaire de
 plt.legend()
 plt.xlabel("Intensité de l'électro-aimant $[A]$")
 plt.ylabel("Déflexion induite par l'électro-aimant $[mm]$")
-plt.show()
 plt.savefig('figures/s_vs_I(pico).png', dpi=200)
+plt.show()
