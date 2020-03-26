@@ -57,7 +57,22 @@
 
 
 
+# 4. Distribution spatiale du jet non-défléchi
 
-
-
-
+- Théorie
+  - But : Déterminer les conditions optimales d’observation du phénomène de quantification spatiale
+  - Comme attendu classiquement, sans champ magnétique non-uniforme appliqué, le faisceau ne doit pas être dévié. Distribution gaussienne avec comme maximum la position en face de la fente du four.
+  - Détermination du rapport $\text{Signal}/\text{Bruit}$ : $(V_{pic} - V_{fond}) / V_{fond}$. 
+- Matériel et Méthodes
+  - On amène le courant du filament à 2.8A (toujours attendre la stabilisation), et la tension de la cage de Faraday à 5.0V
+  - On positionne le détecteur à une des extrémités.
+  - On start l'oscilloscope, puis on sélectionne la position '+' et on démarre le moteur en même temps. On a alors un repère pour le moment où le détecteur à commencer à mesurer. On refait la même chose à la fin (à l'envers bien sûr) et on a un repère pour la fin de la mesure. 
+  - On peut alors calculer le temps passé pour effectuer la mesure (entre les deux repères), et sachant la distance parcourue en regardant la position de la vis micrométrique à chaque extrémité, on a une conversion $sec \rightarrow mm$. 
+  - On réitère l'opération pour des valeurs différentes de $I_{détecteur}$ (avec valeurs fixes de $V_{cage}$), et on évalue le rapport $\text{Signal}/\text{Bruit}$ pour chaque prise de mesures, pour ensuite continuer avec la valeur de $I_{détecteur}$ qui donne un rapport $\text{Signal}/\text{Bruit}$ le plus élevé en faisant varier cette fois-ci $V_{cage}$. 
+- Résultats et Analyse
+  - (voir tableaux)
+  - On a un meilleur rapport $\text{Signal}/\text{Bruit}$ pour un $I_{détecteur} = 2.9A$ et $V_{cage} = 5.0V$. 
+  - On remarque également (voir sur graphe oscillo) que le pic est asymétrique. Plusieurs hypothèses sont émises : 
+    - Au fur et a mesure que le détecteur se déplace, un dépôt de potassium se forme sur ce dernier, ce qui a pour effet d'ioniser des atomes qui ne sont pas forcément envoyés par le faisceau mais qui sont ionisés directement depuis le dépôt.
+    - Le détecteur se rapproche du maximum d'intensité du faisceau au début et s'en éloigne à la fin. 
+    - L'intensité du faisceau augmente peut-être avec le temps. 

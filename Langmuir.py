@@ -41,4 +41,4 @@ k_B = 86.174E-6
 phi = k_B*popt[1]
 print(f"La constante C est égale à {popt[0]:.3e}")
 print(f"La constante Lambda est égale à {popt[1]:.2f} K")
-print(f"La constante phi est égale à {phi:.2f} eV")
+print(f"La constante phi est égale à {phi:.2f} ")
