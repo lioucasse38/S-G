@@ -21,9 +21,9 @@ err_s = np.array([])
 I_EA = np.array([])
 
 for r in range(12, 18):
-    s_m = np.append(s_m, feuille_1.cell_value(rowx=r, colx=14))
-    s_p = np.append(s_p, np.abs(feuille_1.cell_value(rowx=r, colx=3)))
-    err_s = np.append(err_s, feuille_1.cell_value(rowx=r, colx=11))
+    s_m = np.append(s_m, feuille_1.cell_value(rowx=r, colx=6))
+    s_p = np.append(s_p, np.abs(feuille_1.cell_value(rowx=r, colx=5)))
+    err_s = np.append(err_s, feuille_1.cell_value(rowx=r, colx=13))
     I_EA = np.append(I_EA, feuille_1.cell_value(rowx=r, colx=2))
 
 errI_EA = np.array([0.1] * len(I_EA))
@@ -49,5 +49,5 @@ plt.plot(x, lin(x, *popt), linestyle='-', color='black', label="Fit linéaire de
 plt.legend()
 plt.xlabel("Intensité de l'électro-aimant $[A]$")
 plt.ylabel("Déflexion induite par l'électro-aimant $[mm]$")
-plt.show()
 plt.savefig('figures/s_vs_I(pico).png', dpi=200)
+plt.show()
