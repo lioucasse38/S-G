@@ -106,7 +106,7 @@
 > # 6. Evaluation du nombre d'atomes dans le jet non-défléchi
 >
 > - Théorie
->   - On a mesurer des profils d'intensité pour le jet non-défléchi, en connaissant l'aire sous la courbe grâce à la formule suivante : $\text{Aire} [nA.s]= 1.065(I_{pic} - I_{fond})\times\text{FWHM}$, on peut déduire directement le nombre d'atomes captés si on considère l'efficacité du détecteur de 100%.
+>   - On a mesuré des profils d'intensité pour le jet non-défléchi, en connaissant l'aire sous la courbe grâce à la formule suivante : $\text{Aire} [nA.s]= 1.065(I_{pic} - I_{fond})\times\text{FWHM}$, on peut déduire directement le nombre d'atomes captés si on considère l'efficacité du détecteur de 100%.
 >   - On a la charge d'un ion qui est égale à $1.6\times10^{-19} \space C$. Comme le coulomb est également des $A.s$, on peut obtenir le nombre d'atomes par : $\#\text{atomes} = \frac{\text{Aire}}{1.6\times10^{-19}C}$. 
 > - Matériel et méthode
 >   - On prend comme exemple le profil obtenu pour les paramètres optimaux.
