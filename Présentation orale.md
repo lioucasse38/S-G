@@ -49,8 +49,8 @@
   - Le détecteur est préalablement placé à l'endroit où l'intensité est maximale.
   - Le courant du filament est amené à 3.0A, puis on attend 5min pour que sa température se stabilise.
   - La cage de faraday est amenée à 5.0V
-  - Le pico-ampèremètre est utilisée à la position '+' pour capter les ions, et l'échelle utilisée est de 0.1nA. 
-  - On prend les mesures de température à chaque fois que l'aiguille passe 0. 01nA (avantage d'être plus précis que si on prenait le courant pour chaque augmentation d'un degré car aiguille peut se trouver entre 2 graduations). Arrivé à la saturation de l'échelle, on passera à l'échelle de 0.3nA (se verra sur l'incertitude des points de la courbe) jusqu'à s'arrêter à une intensité de 0.15nA.
+  - > Le pico-ampèremètre est utilisée à la position '+' pour capter les ions, et l'échelle utilisée est de 0.1nA. 
+  - > On prend les mesures de température à chaque fois que l'aiguille passe 0. 01nA (avantage d'être plus précis que si on prenait le courant pour chaque augmentation d'un degré car aiguille peut se trouver entre 2 graduations). Arrivé à la saturation de l'échelle, on passera à l'échelle de 0.3nA (se verra sur l'incertitude des points de la courbe) jusqu'à s'arrêter à une intensité de 0.15nA.
 - Résultats et analyse
   - On peut alors tracer la courbe (*) et faire le fit exponentiel (voir graphe).
   - La courbe à bien une décroissance exponentielle, ce qui vérifie le comportement prédit par la loi de Langmuir. Avec le fit, on peut déduire la valeur approximative des paramètres $\Lambda$ et $\Phi$ (voir valeurs). On remarque un certain écart entre les valeurs théoriques et expérimentales, notamment car le courant de bruit de fond constant n'a pas été soustrait aux données. Mais on obtient au moins l'ordre de grandeur des valeurs de $\Lambda$ et $\Phi$. Le but ici était de valider expérimentalement la loi de Langmuir.
@@ -103,12 +103,20 @@
   - Après avoir trouvé les valeurs de champ magnétique moyen en fonction du courant, on remarque que l'ordre de grandeur du champ magnétique est  environ $0.4 \space T$, ce qui est raisonnable est cohérent selon notre configuration (les valeurs typiques de champ magnétique pour ce type).
   - Quoi dire d'autre ??
 
-# 6. Evaluation du nombre d'atomes dans le jet non-défléchi
+> # 6. Evaluation du nombre d'atomes dans le jet non-défléchi
+>
+> - Théorie
+>   - On a mesurer des profils d'intensité pour le jet non-défléchi, en connaissant l'aire sous la courbe grâce à la formule suivante : $\text{Aire} [nA.s]= 1.065(I_{pic} - I_{fond})\times\text{FWHM}$, on peut déduire directement le nombre d'atomes captés si on considère l'efficacité du détecteur de 100%.
+>   - On a la charge d'un ion qui est égale à $1.6\times10^{-19} \space C$. Comme le coulomb est également des $A.s$, on peut obtenir le nombre d'atomes par : $\#\text{atomes} = \frac{\text{Aire}}{1.6\times10^{-19}C}$. 
+> - Matériel et méthode
+>   - On prend comme exemple le profil obtenu pour les paramètres optimaux.
+> - Résultats
+>   - En utilisant la formule, on trouve que $5.14\times10^{9}$ atomes ont été perçus par le détecteur, avec l'efficacité d'ionisation supposée de 100%, il y a le même nombre d'atomes de potassium qui ont été envoyés par le jet non-défléchi.
 
-- Théorie
-  - On a mesurer des profils d'intensité pour le jet non-défléchi, en connaissant l'aire sous la courbe grâce à la formule suivante : $\text{Aire} [nA.s]= 1.065(I_{pic} - I_{fond})\times\text{FWHM}$, on peut déduire directement le nombre d'atomes captés si on considère l'efficacité du détecteur de 100%.
-  - On a la charge d'un ion qui est égale à $1.6\times10^{-19} \space C$. Comme le coulomb est également des $A.s$, on peut obtenir le nombre d'atomes par : $\#\text{atomes} = \frac{\text{Aire}}{1.6\times10^{-19}C}$. 
-- Matériel et méthode
-  - On prend comme exemple le profil obtenu pour les paramètres optimaux.
-- Résultats
-  - En utilisant la formule, on trouve que $5.14\times10^{9}$ atomes ont été perçus par le détecteur, avec l'efficacité d'ionisation supposée de 100%, il y a le même nombre d'atomes de potassium qui ont été envoyés par le jet non-défléchi.
+# Conclusion
+
+Les objectifs du laboratoire étant de vérifier le comportement de la loi de Langmuir et de mesurer la distribution spatiale des jets défléchi et non-défléchi, on a démontré que le gaz de potassium se comportait bien selon cette loi, le bruit de fond aurait pu être soustrait pour pouvoir mesurer précisément les paramètres $\Lambda$ et $\Phi$. Quant aux mesures liées aux jets, on obtient bien des mesures selon les prédictions les plus récentes (on a connaissance du spin maintenant lol) et on a vérifié la loi de la déflexion magnétique en calculant les écarts  $s_+$ et $s_-$ en faisant varier le gradient du champ.  
+
+
+
+Ce qui met fin à notre présentation, merci de nous avoir écouté.
