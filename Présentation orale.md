@@ -61,7 +61,7 @@
 
 - Théorie
   - But : Déterminer les conditions optimales d’observation du phénomène de quantification spatiale
-  - Comme attendu classiquement, sans champ magnétique non-uniforme appliqué, le faisceau ne doit pas être dévié. Distribution gaussienne avec comme maximum la position en face de la fente du four.
+  - Comme attendu classiquement, sans champ magnétique non-uniforme appliqué, le faisceau ne doit pas être dévié. Distribution gaussienne avec comme maximum la position alignée avec la fente du four.
   - Détermination du rapport $\text{Signal}/\text{Bruit}$ : $(V_{pic} - V_{fond}) / V_{fond}$. 
   
 - Matériel et Méthodes
