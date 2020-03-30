@@ -2,11 +2,11 @@
 
 # 4. Distribution spatiale du jet non-défléchi
 
-Ainsi, dans un second temps, nous venons étudier la distribution spatiale du jet non-défléchi. Le but concret de cette expérience est de venir déterminer les conditions optimales d'observation du phénomène de quantification spatiale. Or, on sait que de façon classique, sans l'application d'un champ magnétique non-uniforme, le faisceau ne sera pas dévié, d'où nous obtiendrons une distribution gaussienne ayant pour maximum la position alignée avec la fente du four. Par la suite, nous venons déterminer le rapport Signal sur Bruit à l'aide de la formule suivante : $\text{Signal}/\text{Bruit}$ : $(V_{pic} - V_{fond}) / V_{fond}$
+Ainsi, dans un second temps, on vient étudier la distribution spatiale du jet non-défléchi. Le but concret de cette expérience est de venir déterminer les conditions optimales d'observation du phénomène de quantification spatiale. Or, on sait que de façon classique, sans l'application d'un champ magnétique non-uniforme, le faisceau ne sera pas dévié, d'où on obtiendra une distribution gaussienne qui aura pour maximum la position alignée avec la fente du four. Par la suite, on vient déterminer le rapport Signal sur Bruit à l'aide de la formule suivante : $\text{Signal}/\text{Bruit}$ : $(V_{pic} - V_{fond}) / V_{fond}$. A l'aide de Picolog, on utilise l'intensité à la place qui est fournie directement 
 
-Lors de la réalisation de l'expérience, nous commençons par amener le courant du filament à 2.8A en attendant toujours la stabilisation, et la tension de la cage de Faraday à 5.0V.
+Lors de la réalisation de l'expérience, on commence par amener le courant du filament à 2.8A en attendant toujours la stabilisation, et la tension de la cage de Faraday à 5.0V.
 
-Nous positionnons le détecteur à l'une des extrémités, nous démarrons l'acquisition par l'ordinateur et l'oscilloscope, puis nous sélectionnons la position '+' avant de démarrer le moteur. On a alors un repère pour le moment où le détecteur a commencé à mesurer. Nous reproduisons la même étape à la fin en arrêtant d'abord le moteur puis l'oscilloscope afin d'avoir un repère pour la fin de la mesure.
+On positionne le détecteur à l'une des extrémités, on démarre l'acquisition par l'ordinateur et l'oscilloscope, puis on sélectionne la position '+' avant de démarrer le moteur. On a alors un repère pour le moment où le détecteur a commencé à mesurer. On reproduit la même étape à la fin en arrêtant d'abord le moteur puis l'oscilloscope afin d'avoir un repère pour la fin de la mesure.
 
 Dès lors, il est possible de calculer le temps passé pour effectuer la mesure à l'aide de ces deux repères, et, en sachant la distance parcourue en regardant la position de la vis micrométrique à chaque extrémité, nous pouvons obtenir une conversion des secondes vers les millimètres.
 
@@ -16,11 +16,11 @@ Ainsi, les données obtenues sont présentées dans les tableaux suivants. Nous 
 
 - Au fur et a mesure que le détecteur se déplace, un dépôt de potassium se forme sur ce dernier, ce qui a pour effet d'ioniser des atomes qui ne sont pas forcément envoyés par le faisceau mais qui sont ionisés directement depuis le dépôt.
 - Le détecteur se rapproche du maximum d'intensité du faisceau au début et s'en éloigne à la fin. 
-- L'intensité du faisceau augmente peut-être avec le temps. 
+- L'intensité du faisceau augmente avec le temps.
 
 # 5. Distribution spatiale du jet défléchi
 
-Par la suite, nous étudions le cas de la distribution spatiale du jet défléchi. Or, comme nous avons pu le voir en introduction, les atomes subissent une force à cause du champ magnétique non-uniforme et de leur moment magnétique de spin. Nous devons donc observer une déflexion du faisceau en deux si les atomes se trouvent dans leur état fondamental. Avec une analysé statistique du gaz de potassium et du faisceau qui en résulte ainsi que d'une étude des forces appliquées aux atomes de potassium, nous pouvons déterminer la déflexion des atomes avec la vitesse la plus probable (qui se trouve être $v_m = \sqrt{\frac{3k_BT}{m_{potass}}}$ après l'analyse de la distribution des vitesses et du flux de particules généré à la sortie du four). 
+Par la suite, nous étudions le cas de la distribution spatiale du jet défléchi. Or, comme nous avons pu le voir en introduction, les atomes subissent une force à cause du champ magnétique non-uniforme et de leur moment magnétique de spin. Nous devons donc observer une déflexion du faisceau en deux si les atomes se trouvent dans leur état fondamental. Avec une analyse statistique du gaz de potassium et du faisceau qui en résulte ainsi que d'une étude des forces appliquées aux atomes de potassium, nous pouvons déterminer la déflexion des atomes avec la vitesse la plus probable fournit dans le protocole.
 
 Ceci implique une déflexion en fonction du gradient du champ magnétique appliqué donnée par : $s_m = \pm \frac{d}{3T}(D + d/2)\frac{\mu_B}{k_B}\frac{\partial B}{\partial z}$ où D est la distance entre la fin de l'électro-aimant et la position du plan où les atomes sont observés, et d est la longueur que les atomes parcourent dans l'électro-aimant.
 
@@ -28,13 +28,15 @@ Il est aussi possible d'obtenir la valeur du champ magnétique moyen de l'élect
 
 En ce qui concerne les manipulations, nous reproduisons celle effectuée pour le jet non-défléchi pour avoir des repères initiaux et finaux lors de l'acquisition des données. De plus, nous utilisons les paramètres optimaux trouvés précédemment pour le courant de détecteur et la tension de la cage de Faraday. Nous mesurons le profil du jet défléchi pour des valeurs de courant de bobine fixes.
 
-Nous faisons également varier le courant appliqué dans a bobine de l'électro-amant pour faire varier le gradient du champ magnétique et prendre d'autres mesures du profil. Puis nous mesurons le position des pics s+ et s- par rapport au creux central, et avec la conversion de seconde vers millimètre, nous pouvons trouver la déflexion en mm.
+DIAPO
 
-De plus, avec D = 49.1cm et d = 9.5cm, on peut calculer la valeur du gradient du champ en fonction de $s$ et de $T$ d'après la formule vue précédemment, on peut en déduire le champ magnétique moyen.
+Nous faisons également varier le courant appliqué dans la bobine de l'électro-amant pour faire varier le gradient du champ magnétique et prendre d'autres mesures du profil. Puis nous mesurons le position des pics s+ et s- par rapport au creux central, et avec la conversion de seconde vers millimètre, nous pouvons trouver la déflexion en mm.
+
+De plus, avec D = 49.1cm et d = 9.5cm, on peut calculer la valeur du gradient du champ en fonction de $s$ et de $T$ d'après la formule de $\frac{\partial B}{\partial z}$, on peut en déduire le champ magnétique moyen.
 
 Pour les résultats, nous obtenons un profil comme attendu ou le faisceau est séparé en deux, de part et d'autre du centre. Nous pouvons ainsi tracer les écarts s+ et s- obtenus en fonction du courant appliqué à la bobine. Ceci nous permet de faire un fit linéaire pour ensuite avoir la valeur du gradient du champ magnétique pour différents courants (à l'aide de la formule précédente), et ainsi en déduire la valeur du champ magnétique moyen pour différents courants.
 
-Nous remarquons donc que la déflexion augmente avec le courant, ce qui était prévisible car le champ magnétique créé par l'électro-aimant augmente linéairement avec le courant. De plus, après avoir trouvé les valeurs de champ magnétique moyen en fonction du courant, on remarque que l'ordre de grandeur du champ magnétique est environ $0.4 \space T$, ce qui est raisonnable est cohérent selon notre configuration (les valeurs typiques de champ magnétique pour ce type)
+Nous remarquons donc que la déflexion augmente avec le courant, ce qui était prévisible car le champ magnétique créé par l'électro-aimant augmente linéairement avec le courant. De plus, après avoir trouvé les valeurs de champ magnétique moyen en fonction du courant, on remarque que l'ordre de grandeur du champ magnétique est environ $0.4 \space T$, ce qui est raisonnable et cohérent selon notre configuration (les valeurs typiques de champ magnétique pour ce type)
 
 # Conclusion
 
